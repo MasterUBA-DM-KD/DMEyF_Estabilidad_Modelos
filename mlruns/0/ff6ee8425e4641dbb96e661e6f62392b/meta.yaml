@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/ff6ee8425e4641dbb96e661e6f62392b/artifacts
+deleted_time: 1699922094988
+end_time: 1699921663942
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: ff6ee8425e4641dbb96e661e6f62392b
+run_name: magnificent-gnu-681
+run_uuid: ff6ee8425e4641dbb96e661e6f62392b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699921662569
+status: 3
+tags: []
+user_id: uribe

@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/10c6409b3f154535a9880ace381f28d0/artifacts
+deleted_time: 1699921687241
+end_time: 1699921510634
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 10c6409b3f154535a9880ace381f28d0
+run_name: thundering-owl-178
+run_uuid: 10c6409b3f154535a9880ace381f28d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699921508292
+status: 3
+tags: []
+user_id: uribe

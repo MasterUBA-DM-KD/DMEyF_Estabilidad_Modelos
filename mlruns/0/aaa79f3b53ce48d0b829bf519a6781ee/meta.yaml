@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/aaa79f3b53ce48d0b829bf519a6781ee/artifacts
+end_time: 1699922892683
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aaa79f3b53ce48d0b829bf519a6781ee
+run_name: skillful-donkey-358
+run_uuid: aaa79f3b53ce48d0b829bf519a6781ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699922891380
+status: 3
+tags: []
+user_id: uribe

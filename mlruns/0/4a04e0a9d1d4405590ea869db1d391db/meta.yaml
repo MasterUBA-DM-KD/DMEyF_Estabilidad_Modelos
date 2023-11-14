@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/4a04e0a9d1d4405590ea869db1d391db/artifacts
+end_time: 1699923080566
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4a04e0a9d1d4405590ea869db1d391db
+run_name: melodic-seal-246
+run_uuid: 4a04e0a9d1d4405590ea869db1d391db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699923078934
+status: 3
+tags: []
+user_id: uribe

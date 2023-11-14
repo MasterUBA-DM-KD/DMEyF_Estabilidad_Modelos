@@ -1,0 +1,39 @@
+artifact_path: model
+flavors:
+  lightgbm:
+    code: null
+    data: model.pkl
+    lgb_version: 4.1.0
+    model_class: lightgbm.sklearn.LGBMClassifier
+  python_function:
+    data: model.pkl
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.lightgbm
+    python_version: 3.11.5
+mlflow_version: 2.8.0
+model_size_bytes: 5638
+model_uuid: 8ce6ca2fc2a74aae9960064fc3f6b710
+run_id: a42b2fff32b74461ba40692f995faf7c
+signature:
+  inputs: '[{"type": "long", "name": "numero_de_cliente"}, {"type": "long", "name":
+    "foto_mes"}, {"type": "long", "name": "active_quarter"}, {"type": "long", "name":
+    "cliente_vip"}, {"type": "long", "name": "internet"}, {"type": "long", "name":
+    "cliente_edad"}, {"type": "long", "name": "cliente_antiguedad"}, {"type": "double",
+    "name": "mrentabilidad"}, {"type": "double", "name": "mrentabilidad_annual"},
+    {"type": "double", "name": "mcomisiones"}, {"type": "double", "name": "mactivos_margen"},
+    {"type": "double", "name": "mpasivos_margen"}, {"type": "long", "name": "cproductos"},
+    {"type": "long", "name": "tcuentas"}, {"type": "long", "name": "ccuenta_corriente"},
+    {"type": "long", "name": "mcuenta_corriente_adicional"}, {"type": "double", "name":
+    "mcuenta_corriente"}, {"type": "long", "name": "ccaja_ahorro"}, {"type": "double",
+    "name": "mcaja_ahorro"}, {"type": "long", "name": "mcaja_ahorro_adicional"}, {"type":
+    "double", "name": "mcaja_ahorro_dolares"}, {"type": "long", "name": "cdescubierto_preacordado"},
+    {"type": "double", "name": "mcuentas_saldo"}, {"type": "long", "name": "ctarjeta_debito"},
+    {"type": "long", "name": "ctarjeta_debito_transacciones"}, {"type": "double",
+    "name": "mautoservicio"}, {"type": "long", "name": "ctarjeta_visa"}, {"type":
+    "long", "name": "ctarjeta_visa_transacciones"}, {"type": "double", "name": "mtarjeta_visa_consumo"},
+    {"type": "double", "name": "clase_binaria"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2023-11-14 00:51:45.724798'

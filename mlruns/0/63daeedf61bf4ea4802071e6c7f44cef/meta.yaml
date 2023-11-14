@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/63daeedf61bf4ea4802071e6c7f44cef/artifacts
+end_time: 1699922891367
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 63daeedf61bf4ea4802071e6c7f44cef
+run_name: youthful-fly-747
+run_uuid: 63daeedf61bf4ea4802071e6c7f44cef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699922889940
+status: 3
+tags: []
+user_id: uribe

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/9d79240329d94b67a87f33069cee2c35/artifacts
+end_time: 1699922084310
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d79240329d94b67a87f33069cee2c35
+run_name: smiling-goose-86
+run_uuid: 9d79240329d94b67a87f33069cee2c35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699922082899
+status: 3
+tags: []
+user_id: uribe

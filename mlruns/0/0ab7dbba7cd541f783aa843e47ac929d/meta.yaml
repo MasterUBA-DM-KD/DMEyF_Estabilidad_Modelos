@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/uribe/Documents/Code/University/2do_Cuatri/DM_EyF/DMEyF_Estabilidad_Modelos/mlruns/0/0ab7dbba7cd541f783aa843e47ac929d/artifacts
+deleted_time: 1699921495256
+end_time: 1699921352869
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 0ab7dbba7cd541f783aa843e47ac929d
+run_name: clumsy-stork-63
+run_uuid: 0ab7dbba7cd541f783aa843e47ac929d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699921351245
+status: 3
+tags: []
+user_id: uribe
