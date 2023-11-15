@@ -1,12 +1,14 @@
+# Third Party Imports
 import duckdb
 
+# docformatter Package Imports
 from src.constants import MONTHS_BASELINE, MONTHS_INFERENCE, PATH_CRUDO, PATH_DATABASE, PATH_FINAL, RUN_ETL
 from src.preprocess.etl import extract, load, transform
 
 if __name__ == "__main__":
     con = duckdb.connect(database=PATH_DATABASE, read_only=False)
     if RUN_ETL:
-        extract(con, PATH_CRUDO, '1=1')
+        extract(con, PATH_CRUDO, "1=1")
         transform(con, True, True)
         load(con, PATH_FINAL)
     else:

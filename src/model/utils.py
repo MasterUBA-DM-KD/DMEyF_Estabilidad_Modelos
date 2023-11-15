@@ -1,16 +1,27 @@
+# Standard Library Imports
 import os
 
+# Third Party Imports
 import lightgbm as lgb
-import pandas as pd
 import mlflow
+import pandas as pd
 
-from src.constants import MLFLOW_ARTIFACT_ROOT, MLFLOW_TRACKING_URI, EVALUATOR_CONFIG
+# docformatter Package Imports
+from src.constants import EVALUATOR_CONFIG, MLFLOW_ARTIFACT_ROOT, MLFLOW_TRACKING_URI
 
 os.environ["MLFLOW_TRACKING_URI"] = MLFLOW_TRACKING_URI
 os.environ["MLFLOW_ARTIFACT_ROOT"] = MLFLOW_ARTIFACT_ROOT
 
 
-def train_model(X_train: pd.DataFrame, y_train: pd.Series, X_test:pd.DataFrame, y_test: pd.Series, params: dict, tags: dict, **kwargs) -> lgb.LGBMClassifier:
+def train_model(
+    X_train: pd.DataFrame,
+    y_train: pd.Series,
+    X_test: pd.DataFrame,
+    y_test: pd.Series,
+    params: dict,
+    tags: dict,
+    **kwargs,
+) -> lgb.LGBMClassifier:
     mlflow.lightgbm.autolog()
 
     with mlflow.start_run():

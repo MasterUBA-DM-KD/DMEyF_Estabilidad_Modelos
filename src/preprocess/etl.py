@@ -1,8 +1,11 @@
+# Standard Library Imports
 import logging
 
+# Third Party Imports
 import duckdb
 import pandas as pd
 
+# docformatter Package Imports
 from src.constants import LAG_FILES, MONTHS_INFERENCE
 
 logger = logging.getLogger(__name__)

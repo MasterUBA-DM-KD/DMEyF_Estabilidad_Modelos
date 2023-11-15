@@ -10,7 +10,7 @@ Corresponde a una realización de un proceso generador de datos.  En nuestro cas
 El rendimiento de un modelo (que no se re-entrena) decae en el tiempo. No obstante, no quiero ser tan optimista de mantenerlo estático durante un año ni tan pesimista de creer que en un mes ocurre tanto drift como para re-entrenarlo. Además, si se incluye la optimización bayesiana (48h) es tema de nunca acabar. Entre el optimismo y pesimismo definir un punto medio:
 A menos que se queme el banco o todos los clientes corten sus tarjetas al tiempo, el drift entre un par de meses contiguos es mínimo, por lo que el modelo puede continuar prediciendo hasta que el drift muestre su peor versión y, únicamente, en ese momento conviene hacer un esfuerzo para construir una nueva versión del modelo. Definir cuánta ganancia me permito ceder con tal de reducir el esfuerzo de re-entrenar mes a mes.
 
-- Conforme pasa el tiempo el performance del modelo se degrada (como se muestra en la siguiente imagen) 
+- Conforme pasa el tiempo el performance del modelo se degrada (como se muestra en la siguiente imagen)
 - Esa degradación no es tan repentina como para hacerlo mes a mes
 - Model-centric MLOps está cada vez más en desuso
 
@@ -52,16 +52,16 @@ El modelo en producción se entrena una vez el modelo adversario ha superado el 
 
 **¿Por qué tiene sentido usar un modelo adversario?**
 
-El modelo adversario no podrá distinguir las clases en el dataset adversario si los datos tienen una distribución igual/similar 
+El modelo adversario no podrá distinguir las clases en el dataset adversario si los datos tienen una distribución igual/similar
 
 > i.e ROC AUC ~ 0.5
 
-El modelo adversario adquirirá un mayor poder predictivo si las distribuciones son distintas 
+El modelo adversario adquirirá un mayor poder predictivo si las distribuciones son distintas
 
 > i.e ROC AUC > 0.5
 
 #### Variable objetivo:
-Se calcula hasta la fecha en la que se aplica el modelo 
+Se calcula hasta la fecha en la que se aplica el modelo
 - Mes a mes
 - Una vez aparezca drift
 

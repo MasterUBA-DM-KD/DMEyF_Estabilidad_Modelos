@@ -17,14 +17,7 @@ MONTHS_BASELINE = [
     202103,
 ]
 
-MONTHS_INFERENCE = [
-    202104,
-    202105,
-    202106,
-    202107,
-    202108,
-    202109
-]
+MONTHS_INFERENCE = [202104, 202105, 202106, 202107, 202108, 202109]
 
 LAG_FILES = [
     "sql/lags_1.sql",
@@ -33,28 +26,21 @@ LAG_FILES = [
 ]
 
 PARAMS = {
-    'objective': 'binary',
-    'metric': 'auc',
-    'is_unbalance': True,
-    'bagging_freq': 5,
-    'boosting': 'dart',
-    'num_boost_round': 300,
+    "objective": "binary",
+    "metric": "auc",
+    "is_unbalance": True,
+    "bagging_freq": 5,
+    "boosting": "dart",
+    "num_boost_round": 300,
     "verbosity": -1,
     "n_jobs": -1,
     "seed": RANDOM_STATE,
 }
 
-ADV_MODEL_PARAMS = {
-    'random_state': RANDOM_STATE,
-    'n_jobs': -1
-}
+ADV_MODEL_PARAMS = {"random_state": RANDOM_STATE, "n_jobs": -1}
 
-EVALUATOR_CONFIG = {
-    "log_model_explainability": False,
-    "metric_prefix": "evaluation_"
-}
+EVALUATOR_CONFIG = {"log_model_explainability": False, "metric_prefix": "evaluation_"}
 
 
 MLFLOW_TRACKING_URI = "sqlite:///buckets/b1/exp_colab/database/mlruns.db"
 MLFLOW_ARTIFACT_ROOT = "gs://mlflow-artifacts-uribe/mlruns_exp_colab"
-
