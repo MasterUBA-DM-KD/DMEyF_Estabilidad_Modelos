@@ -1,7 +1,9 @@
-RUN_ETL = True
+RUN_ETL = False
 RANDOM_STATE = 42
 PATH_DATABASE = "database/database.db"
-PATH_CRUDO = "datasets/raw/data_for_test.parquet"
+PATH_CRUDO = "~/buckets/b1/datasets/raw/competencia_03_crudo.parquet"
+PATH_FINAL = "~/buckets/b1/exp_colab/datasets/processed/competencia_03.parquet"
+PATH_MAX_GAN = "~/buckets/b1/exp_colab/datasets/processed/ganancia_maxima.parquet"
 
 MONTHS_BASELINE = [
     202007,
@@ -12,7 +14,7 @@ MONTHS_BASELINE = [
     202012,
     202101,
     202102,
-    202103
+    202103,
 ]
 
 MONTHS_INFERENCE = [
@@ -42,12 +44,17 @@ PARAMS = {
     "seed": RANDOM_STATE,
 }
 
-ADV_MODEL_PARAMS ={
+ADV_MODEL_PARAMS = {
     'random_state': RANDOM_STATE,
     'n_jobs': -1
 }
 
+EVALUATOR_CONFIG = {
+    "log_model_explainability": False,
+    "metric_prefix": "evaluation_"
+}
 
-MLFLOW_TRACKING_URI = "sqlite:///database/mlruns.db"
-MLFLOW_ARTIFACT_ROOT = "gs://mlflow-artifacts-uribe/mlruns"
+
+MLFLOW_TRACKING_URI = "sqlite:///buckets/b1/exp_colab/database/mlruns.db"
+MLFLOW_ARTIFACT_ROOT = "gs://mlflow-artifacts-uribe/mlruns_exp_colab"
 
