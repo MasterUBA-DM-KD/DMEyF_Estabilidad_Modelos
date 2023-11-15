@@ -52,17 +52,21 @@ def get_dataframe(con: duckdb.DuckDBPyConnection, where_clause: str) -> pd.DataF
     return df
 
 
-def create_adversarial_data(con: duckdb.DuckDBPyConnection, where_clauses: dict) -> pd.DataFrame:
-    df = con.sql(
-        f"""
-        SELECT
-            *
-        FROM competencia_03
-        WHERE {where_clauses['adversarial']} 
-        """
-    ).to_df()
+def create_adversarial_data(df_train: pd.DataFrame, df_prod: pd.DataFrame) -> pd.DataFrame:
+    df_train["label"] = 0
+    df_prod["label"] = 1
 
-    return df
+    drop_cols = []
+    for col in df_train.columns:
+        if "clase" in col:
+            drop_cols.append(col)
+
+    df_train = df_train.drop(drop_cols, axis=1)
+    df_prod = df_prod[df_train.columns]
+
+    adversarial_data = pd.concat([df_train, df_prod], axis=0)
+
+    return adversarial_data
 
 
 def create_clase_ternaria(con: duckdb.DuckDBPyConnection) -> None:
