@@ -42,5 +42,5 @@ ADV_MODEL_PARAMS = {"random_state": RANDOM_STATE, "n_jobs": -1}
 EVALUATOR_CONFIG = {"log_model_explainability": False, "metric_prefix": "evaluation_"}
 
 
-MLFLOW_TRACKING_URI = "sqlite:///buckets/b1/exp_colab/database/mlruns.db"
+MLFLOW_TRACKING_URI = "sqlite:///../buckets/b1/exp_colab/database/mlruns.db"
 MLFLOW_ARTIFACT_ROOT = "gs://mlflow-artifacts-uribe/mlruns_exp_colab"
