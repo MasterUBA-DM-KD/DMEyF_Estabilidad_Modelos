@@ -1,4 +1,5 @@
 # Standard Library Imports
+import os
 from typing import Union
 
 # Third Party Imports
@@ -10,7 +11,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 
 # docformatter Package Imports
-from src.constants import ADV_MODEL_PARAMS
+from src.constants import ADV_MODEL_PARAMS, MLFLOW_ARTIFACT_ROOT, MLFLOW_TRACKING_URI
+
+os.environ["MLFLOW_TRACKING_URI"] = MLFLOW_TRACKING_URI
+os.environ["MLFLOW_ARTIFACT_ROOT"] = MLFLOW_ARTIFACT_ROOT
 
 
 def train_adversarial(
